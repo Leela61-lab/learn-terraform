@@ -1,7 +1,7 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "mongodb" {
   instance_type = var.instance-type
   ami = var.ami-id
-  vpc_security_group_ids = [aws_security_group.web.id]
+  vpc_security_group_ids = [aws_security_group.mongodb.id]
 
   tags = var.ec2-tags
 }
