@@ -6,8 +6,8 @@ resource "aws_instance" "web" {
   tags = vars.ec2-tags
 }
 
-resource "aws_security_group" "web" {
-  name        = "web"
+resource "aws_security_group" "mongodb" {
+  name        = "mongodb"
   description = "Allow TLS inbound traffic and all outbound traffic"
 
   ingress {
